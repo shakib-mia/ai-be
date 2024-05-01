@@ -32,7 +32,7 @@ app.post("/upload", upload.single("file"), (req, res) => {
   if (!req.file) {
     return res.status(400).send("No file uploaded.");
   }
-  res.send("http://localhost:5000/upload/" + req.file.filename);
+  res.send("https://ai-be-ap65.onrender.com/upload/" + req.file.filename);
 });
 // Start the server
 
